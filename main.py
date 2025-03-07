@@ -1,9 +1,10 @@
 import telebot
 import openai
+import os
 
-# Подключаем токены
-TELEGRAM_TOKEN = 'тут-вставь-твой-токен-из-BotFather'
-OPENAI_API_KEY = 'тут-вставь-API-ключ-из-OpenAI'
+# Получаем токены из переменных окружения
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 openai.api_key = OPENAI_API_KEY

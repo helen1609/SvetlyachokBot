@@ -27,6 +27,6 @@ def handle_message(message):
         bot.reply_to(message, "Ой, что-то пошло не так. Попробуй снова!")
 
 bot.polling()
-print("Бот успешно запущен!")
+
 
 
